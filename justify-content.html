@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        background-color: orange;
+        width: 500px;
+        height: 500px;
+        display: flex;
+    }
+    .item{
+        width: 100px;
+        height: 100px;
+    }
+    .i1{
+        background-color: red;
+    }
+    .i2{
+        background-color: green;
+    }
+    .i3{
+        background-color: blue;
+    }
+</style>
+<body>
+    <div class="box">
+        <div class="item i1">item1</div>
+        <div class="item i2">item2</div>
+        <div class="item i3">item3</div>
+    </div>
+    <button class="b1">flex-start</button>
+    <button class="b2">flex-end</button>
+    <button class="b3">center</button>
+    <button class="b4">space-between</button>
+    <button class="b5">space-evenly</button>
+    <button class="b6">space-around</button>
+    <script src="../../jquery/jquery-3.5.1.min.js"></script>
+    <script>
+        $(".b1").click(function(){
+            $(".box").css("justify-content","flex-start")
+        })
+        $(".b2").click(function(){
+            $(".box").css("justify-content","flex-end")
+        })
+        $(".b3").click(function(){
+            $(".box").css("justify-content","center")
+        })
+        $(".b4").click(function(){
+            $(".box").css("justify-content","space-between")
+        })
+        $(".b5").click(function(){
+            $(".box").css("justify-content","space-evenly")
+        })
+        $(".b6").click(function(){
+            $(".box").css("justify-content","space-around")
+        })
+    </script>
+</body>
+</html>
